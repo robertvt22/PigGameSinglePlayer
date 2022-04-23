@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game SinglePlayer</title>
+  </head>
+  <body>
+    <div class="panel">
+      <div class="title">
+        <h1>Win against the Dice</h1>
+      </div>
+      <div class="playground">
+        <div class="box top">
+          <div class="score totalScore">
+            <p class="label-title totalScore-title">Total Score:</p>
+            <p class="label-score totalScore-game">0</p>
+          </div>
+          <div class="score totalScore">
+            <p class="label-title currentScore-title">Current Score:</p>
+            <p class="label-score currentScore-game">0</p>
+          </div>
+        </div>
+        <div class="box bottom">
+          <div class="score totalScore">
+            <p class="label-title movesLeft-title">Moves Left:</p>
+            <p class="label-score movesLeft-game">0</p>
+          </div>
+          <div class="score totalScore">
+            <p class="label-title bestScore-title">Best Score:</p>
+            <p class="label-score bestScore-game">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dice hidden"></div>
+    <button class="btn btn--new">🔄 New game</button>
+    <button class="btn btn--roll">🎲 Roll dice</button>
+    <button class="btn btn--hold">📥 Hold</button>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <div class="text">
+        <h1 class="text-modal">You lost!</h1>
+        <h3 class="try">Try again</h3>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
